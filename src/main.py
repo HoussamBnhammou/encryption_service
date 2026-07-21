@@ -1,0 +1,2 @@
+##split the processes to key generation where we will handle all the process of private and public key generation
+##then we have encryptor and decryptor module where we can use the keys to weather encrypt or deycrept the messages

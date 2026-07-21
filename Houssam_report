@@ -1,0 +1,13 @@
+What i did:
+i layed out an overview of the modules we will need to create this project in a high level way.
+made sure to add all the functions needed for the intial cycle and maybe the last one.
+
+
+strugles:
+nothing so far, just the fact that i should have shared this yesterday.
+
+
+what you should tackle now:
+i want you do more researe on prime numbers random generation and see the best way to implement a process that can generate them at P time.
+maybe do more research on the whole key generation process in the industry and see what they are doing example: adding padding on messages.
+i am leaving this a lil bit vague since these are the first session we don't want to tackle coding yet.
