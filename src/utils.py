@@ -37,6 +37,8 @@ def gcd(a,b):
 
 # ntn so say here
 def modular_inverse(e, phi):
+    ##Houssam: currently working on this one but didn't lay out a line of code yet :/
+
     # todo
     return 
 
