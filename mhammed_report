@@ -1,0 +1,21 @@
+- what i modified :
+    - added : utils.py 
+    - removed : folders and extracted the files 
+    - renamed : the files to their folder name 
+    - modified : key_generator.py 
+
+- what i did: 
+    - did some research 
+    - reorganized the file structure so it doesn't signal things that don't exsist :
+        - we don't need folders for each module since each module has only 1 file
+    - i added a section in the report named 'what i modified' since we don't call aymore
+    - everything else is written in comments, use 'what i modified' to know where to look
+
+
+- struggles :
+    - nothing really 
+
+
+- next steps :
+    - we can complete the files and a have a working service in the next two days 
+    - did you have in a mind the ability to open two terminals and have them communicate ? or just simulate a basic rsa functioning ? 
