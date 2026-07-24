@@ -1,18 +1,30 @@
 #### this module is reponsible for genrating the priivate key and public key for encryption and decryption
+from utils import *
 
 
 
-# i put the prime generator in utils
-# i think we should also generate both keys in one function, it's better 
+# i was speed runing this shit
+# please double check
+def generate_public_key(p,q):
+    n = p * q
+    phi = euler_phi(p, q)
+
+    # FLAG : !!!!
+    # need a function to generate this one
+    e = 3 
+    if gcd(e, phi) != 1:
+        while gcd(e, phi) != 1:
+            e += 2
+
+    return (e, n)
 
 
+#double check please brother if you have time
+def generate_private_key(p,q,e):
+    n = p * q
+    phi = euler_phi(p, q)
 
-def generate_public_key():
-    #using the prime numbers generate the public key
-    return
+    d = modular_inverse(e, phi)
 
-
-
-def generate_private_key():
-    #using the prime numbers generate the private key
+    return (d, n)
     return
