@@ -6,6 +6,7 @@ import random
 
 # FLAG: !!!!!!
 # didn't implement the two primes, this one only returns 1 prime
+# Answer flag : we start with this and make sure to do a duplicate check when we invoke this function twice
 def prime_generator(size) :
     while True:
         num = random.getrandbits(size)
@@ -68,5 +69,14 @@ def modular_inverse(e, phi):
         print("e and phi are not coprime")
         return
     return x % phi
-    return 
+
+
+def public_exponent(phi):
+    e = random.randrange(1,phi)
+    if e%2 == 0:
+        e +=1
+    while gcd(e,phi) != 1:
+            e +=2
+
+    return e       
 

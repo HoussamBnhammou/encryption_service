@@ -11,10 +11,9 @@ def generate_public_key(p,q):
 
     # FLAG : !!!!
     # need a function to generate this one
-    e = 3 
-    if gcd(e, phi) != 1:
-        while gcd(e, phi) != 1:
-            e += 2
+    #added the e generator
+    e = public_exponent(phi)
+
 
     return (e, n)
 
@@ -27,4 +26,3 @@ def generate_private_key(p,q,e):
     d = modular_inverse(e, phi)
 
     return (d, n)
-    return

@@ -1,13 +1,16 @@
-What i did:
-i was reading about modular inverse and how to calculate it using extended euclidien,
-but when i got to the point of coding it was a lil bit confusing.
-one hour was not enough to code it, i will continue on it tomorrow.
+- what i modified :
+    - added : ascii_transformer 
+    - removed : nothing
+    - renamed : nothing 
+    - modified : key_generator.py utils.py ascii_transformer
+
+- what i did: 
+    - added the public_exponent generator you mentioin, answered most of your flags, added the ascii transforemers.
 
 
-strugles:
-i can calculate shit in my head, but once i should code a pattern process to resolve an equation like modular inverse i felt like a stupid hoe.
+- struggles :
+    - tried to understand your mod inverse function but i couldn't need more time to understand it.
+    - proving correctness is a bit struggle but i am using chatgpt as my corector 
 
-Next step:
-finish modular inverse function and proceed for the next thing.
-
-ps: good modifications you did.
+- next steps :
+    - finish a minimal working encryption --> decryption.
