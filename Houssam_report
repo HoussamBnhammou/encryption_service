@@ -14,3 +14,27 @@
 
 - next steps :
     - finish a minimal working encryption --> decryption.
+
+
+
+Second Push:
+
+    - added : nothing
+    - removed : nothing
+    - renamed : nothing 
+    - modified : decryptor , encryptor , and main
+
+- what i did: 
+    - added the decrypt and encrypt functions, added a dry run on main file to test if the whole thing will work but i returned an error in the modular inverse function - i did flag it
+
+
+- struggles :
+    - nothing so far
+
+- next steps :
+    - besides resolve errors we should just do the iterations needed to finished the project
+    type of iterations we could do:
+    --> generate large size prime numberes.
+    --> add encoding of public and private key
+
+

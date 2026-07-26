@@ -53,6 +53,7 @@ def gcd(a,b):
 def extended_gcd(a, b):
         if a == 0:
             return b, 0, 1
+        ##Flag the extended_gcd fails here with the error : unsupported operand type(s) for %: 'int' and 'tuple'
         g, x1, y1 = extended_gcd(b % a, a)
         x = y1 - (b // a) * x1
         y = x1
