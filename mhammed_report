@@ -2,17 +2,22 @@
     - added : nothing 
     - removed : nothing
     - renamed : nothing 
-    - modified : key_generator.py utils.py
+    - modified : added comments to ascii_transformer.py decryptor.py encryptor.py 
 
 - what i did: 
-    - tried to translate as much pseudo code as possible 
+    - saw your work and tried to trouble shoot
+    - tried to debugg the extended_gcd (it works fine, maybe the isse is one of the functions that call it)
+    - tried to verify that all assets work as intended (was't exhaustive or thourough)
+    - did a quick tour to identify future targets once current assets are debugged
 
 
 - struggles :
-    - the mod inverse was tricky (had to add another function) so it took time 
-    - i also wasted time stressing unecessarly over how to endure coprimity between e and phi
+    - nothing out of the ordinary 
 
 
 - next steps :
-    - translate as much as possible
-    - bring everything up to respectable standards 
+    - IMPORTANT: if you are going to do anything do the following 
+    - make sure all assets work as intended (i didn't test everything, and what i tested was tested manually and quickly) 
+    - make sure all assets can work with each other (i didn't attempt this despite the main you wrote)
+    - look into potential for upgrades 
+    - other than i appreciate that you made a file for each functionality 

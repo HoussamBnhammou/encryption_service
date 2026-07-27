@@ -26,3 +26,9 @@ def stringToasci(message):
     ##FLAG#### to save information we need. to add a way to save the first digits if they are
     ##added 1 as padding so we won't lost the first digits if they are 0 when we transofrm to int
     return int('1' + asci_message)
+
+
+## mhammed response and upgrade options :
+# the integrity part is for later (read up on the C.I.A. model it's not the agency it's just an acronym)
+# for now we need to ensure the msg handling is safe
+# didn't have time to think through this one
