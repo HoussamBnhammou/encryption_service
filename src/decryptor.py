@@ -2,10 +2,18 @@
 
 
 
-def decryptor(ciphered, d, n):
-    message = ciphered.pow(d) % n
+def decryptor(ciphered, private_key):
+    d, n = private_key
+    chunk_size = (n.bit_length() - 1) // 8
+    message = ""
+    for i, ciphered_chunck in enumerate(ciphered):
+        deciphered_chunck = pow(ciphered_chunck, d, n)
+        if i < len(ciphered) - 1:
+            message += str(deciphered_chunck).zfill(chunk_size)
+        else:
+            message += str(deciphered_chunck)
     #input should be an encrypted message with private key and output should be the decrypted message
-    return message
+    return int(message)
 
 ## upgrade options :
 # i don't think it's smart to have a function that takes the keys as params 

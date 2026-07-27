@@ -1,40 +1,21 @@
 - what i modified :
-    - added : ascii_transformer 
-    - removed : nothing
-    - renamed : nothing 
-    - modified : key_generator.py utils.py ascii_transformer
-
-- what i did: 
-    - added the public_exponent generator you mentioin, answered most of your flags, added the ascii transforemers.
-
-
-- struggles :
-    - tried to understand your mod inverse function but i couldn't need more time to understand it.
-    - proving correctness is a bit struggle but i am using chatgpt as my corector 
-
-- next steps :
-    - finish a minimal working encryption --> decryption.
-
-
-
-Second Push:
-
     - added : nothing
     - removed : nothing
     - renamed : nothing 
     - modified : decryptor , encryptor , and main
 
 - what i did: 
-    - added the decrypt and encrypt functions, added a dry run on main file to test if the whole thing will work but i returned an error in the modular inverse function - i did flag it
+    - the bug turned out that i was shoving a tuple to the function instead of an int, didn't know the key generator return both e and n.
+    - aside from the that just monor debugging and it worked.
+    - but the correctness wasn't validated, the original message was different the deciphered one.
+    - it tuned out that i forget to split the message to chunks that are smaller to n so modulo won't lose information.
 
 
 - struggles :
-    - nothing so far
+    - correctness was really hard to spot, ai helped to find the issue.
 
 - next steps :
-    - besides resolve errors we should just do the iterations needed to finished the project
-    type of iterations we could do:
-    --> generate large size prime numberes.
-    --> add encoding of public and private key
-
+    - didn't had the chance to check or plan what will be the next iterations.
+    - what i am thinking about as an overview is too look over all the function and see which ones that can be ran efficienlty
+    - i was thinking about adding an ssh service that we make ourselve and use this encryption on.
 

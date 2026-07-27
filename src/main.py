@@ -19,13 +19,13 @@ while p == q:
 
 n = p*q
 
-e = generate_public_key(p, q)
+public_key = generate_public_key(p, q)
 
-d = generate_private_key(p, q, e)
+private_key = generate_private_key(p, q, public_key[0])
 
-ciphered_message = encryptor(message, e, n)
+ciphered_message = encryptor(ascii_message, public_key)
 
-deciphered_message  = decryptor(ciphered_message, d, n)
+deciphered_message  = decryptor(ciphered_message, private_key)
 
 final_deciphered_message = asciToString(deciphered_message)
 
@@ -34,8 +34,9 @@ print(message)
 print(p)
 print(q)
 
-print(e)
-print(d)
+# print(e)
+# print(d)
+print(ascii_message)
 print(ciphered_message)
 print(deciphered_message)
 print(final_deciphered_message)
