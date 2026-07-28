@@ -1,7 +1,9 @@
+# This modules handles string to ascii transformation and vice versa 
 
-# This function takes asci message and transform it to the actual message, the reason we need length
-# because when the asci get transformed  to ind it could lose the first digits if they are 0.
-# that's why we need tp remember the length so we can restore the 0s
+# design -> basic encoding implementation
+# what i think -> we have to find a better way 
+
+
 def asciToString(number):
     string_number =  str(number)
     if string_number[0]!= '1':
@@ -17,18 +19,12 @@ def asciToString(number):
     return message
 
 
-#this a message to ascii encoding.
+
 def stringToasci(message):
     asci_message= ""
     for c in message:
         asci_c = ord(c)
         asci_message += f"{asci_c:03d}"
-    ##FLAG#### to save information we need. to add a way to save the first digits if they are
-    ##added 1 as padding so we won't lost the first digits if they are 0 when we transofrm to int
     return int('1' + asci_message)
 
 
-## mhammed response and upgrade options :
-# the integrity part is for later (read up on the C.I.A. model it's not the agency it's just an acronym)
-# for now we need to ensure the msg handling is safe
-# didn't have time to think through this one

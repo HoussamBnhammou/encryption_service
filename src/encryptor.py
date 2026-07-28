@@ -1,6 +1,8 @@
-## use the public key to encrypt the a message
+# This module handles encryption 
 
-
+# design -> padding is apparently common use here
+# what i think -> needs more research 
+# P.S. : my session timer just ended, i didn't actually read and thouroughly verify this function
 
 def encryptor(message, public_key):
         # e: public exponent
@@ -14,11 +16,3 @@ def encryptor(message, public_key):
                 ciphered_chunck = pow(chunck_message, e , n)
                 ciphered_message.append(ciphered_chunck)
         return ciphered_message
-
-    #input should be a message with public key and output should be the encrypted message
-    ## Flag: should we construct a conventional public key file, same goes for private key, i'd so we need to add logic to encode and decode a public and private key
-    ## for now i am injecting the varibale needed as they are once it works we can iterate.
-
-    ## mhammed response : 
-    # i said smt in the decryptor module that i think anwsers your question.
-    # but generally for encryption it's not an issue of keys but rather of the msg 

@@ -1,0 +1,11 @@
+-> global upgrade report :
+    - in utils.py we are mixing general arithmetic stuff with key generation specific stuff 
+    - naming convention is not standard 
+    - linting? (i can understand if you wanna skip this)
+
+-> a tree of the fields worth researching for the next steps :
+    - Number theory (will help with finding primes efficently, focus on primality testing)
+    - Key generation (the main hole we have has to do with key validation)
+    - Message encoding (some stuff about padding, these words come up alot : PKCS#1 v1.5, OAEP)
+    - RSA specific holes (CSPRNGs, semantic security, side-channel resistance, padding-oracle defense)
+    - libraries we use (important for security, check : python random, big-int libraries)

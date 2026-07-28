@@ -1,23 +1,29 @@
 - what i modified :
-    - added : nothing 
+    - added : special report 
     - removed : nothing
     - renamed : nothing 
-    - modified : added comments to ascii_transformer.py decryptor.py encryptor.py 
+    - modified : commented every file except the main 
 
 - what i did: 
-    - saw your work and tried to trouble shoot
-    - tried to debugg the extended_gcd (it works fine, maybe the isse is one of the functions that call it)
-    - tried to verify that all assets work as intended (was't exhaustive or thourough)
-    - did a quick tour to identify future targets once current assets are debugged
+    - worked under the pretex that all assets work and that the code as unit works as well 
+    - re-commented, made code more readable
+    - identified assets eligible for upgrades by :
+        - complexity (we can make the function faster)
+        - security (we can make this function safer)
+        - modularity (we can make this file more modular, will help to apply any ideas you might have like the ssh stuff)
+    notes on modularity concept: 
+        - it's not just the fact each function has it's own file
+        - each module need to be entirely independant, the only moving part is the input 
+        - the file structure,code, etc... has to be written such that it doesn't nothing requires documentation 
+        - this may seem unnessary for a project of this size, but imagine a large codebase with blocks of code you don't see for weeks on end and know you have to comeback to them. it is always a good idea to solve the problem at the root.
 
 
 - struggles :
-    - nothing out of the ordinary 
+    - reading your english 
 
 
 - next steps :
-    - IMPORTANT: if you are going to do anything do the following 
-    - make sure all assets work as intended (i didn't test everything, and what i tested was tested manually and quickly) 
-    - make sure all assets can work with each other (i didn't attempt this despite the main you wrote)
-    - look into potential for upgrades 
-    - other than i appreciate that you made a file for each functionality 
+    - READ MY COMMENTS 
+    - i say a detailed report on how you imagined the app
+    - identify research options 
+    - then we go from there  
