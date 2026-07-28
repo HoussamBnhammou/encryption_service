@@ -2,20 +2,18 @@
     - added : nothing
     - removed : nothing
     - renamed : nothing 
-    - modified : decryptor , encryptor , and main
+    - modified : key_generator , utils , special report
 
 - what i did: 
-    - the bug turned out that i was shoving a tuple to the function instead of an int, didn't know the key generator return both e and n.
-    - aside from the that just monor debugging and it worked.
-    - but the correctness wasn't validated, the original message was different the deciphered one.
-    - it tuned out that i forget to split the message to chunks that are smaller to n so modulo won't lose information.
-
+    - spent time reading and reflecting on your comments.
+    - addressed some of them and answered the ones that i think are not valid 
+    - the adressed comments, will have a Done flag under them.
 
 - struggles :
-    - correctness was really hard to spot, ai helped to find the issue.
+    - nothing but shortness of time.
 
 - next steps :
-    - didn't had the chance to check or plan what will be the next iterations.
-    - what i am thinking about as an overview is too look over all the function and see which ones that can be ran efficienlty
-    - i was thinking about adding an ssh service that we make ourselve and use this encryption on.
-
+    - adress what's left on the comments, if there is any.
+    - pick  one of the fields listed to implement, i suggest we do them all - we should see them as futures, 
+    where each one of us should pick one and implement it, we make sure our implementations are modular and simple
+    so we won't step on each others code..

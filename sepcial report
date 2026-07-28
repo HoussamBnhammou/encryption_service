@@ -1,5 +1,5 @@
 -> global upgrade report :
-    - in utils.py we are mixing general arithmetic stuff with key generation specific stuff 
+    - in utils.py we are mixing general arithmetic stuff with key generation specific stuff --> Done : moved public exponent from utils to key_generator
     - naming convention is not standard 
     - linting? (i can understand if you wanna skip this)
 

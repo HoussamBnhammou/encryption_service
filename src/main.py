@@ -7,7 +7,7 @@ from utils import *
 from key_generator import *
 
 size = 9
-message = "Heil Hitler"
+message = "lorum ipsum"
 
 ascii_message = stringToasci(message)
 

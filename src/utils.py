@@ -4,6 +4,8 @@ import random
 
 # Security -> relies on an external function in it's codebase (is_prime)
 # what i think -> move the logic in house or pass it by argument with correct handling
+# answer: i don't think that's really a cencernt, relying on function that exist not only on 
+# the same code base but also in the same file, i wouldn't be treat it as an external function
 def prime_generator(size) :
     while True:
         num = random.getrandbits(size)
@@ -11,7 +13,6 @@ def prime_generator(size) :
             num += 1       
         if is_prime(num):
             return num
-    return 
 
 # Complexity -> limits the size of the key 
 # what i think -> needs research, i know for sure there are better ones
@@ -53,19 +54,8 @@ def extended_gcd(a, b):
 def modular_inverse(e, phi):
     g, x, _ = extended_gcd(e, phi)
     if g != 1:
-        print("e and phi are not coprime")
-        return
+        raise ValueError("e and phi are not coprime")
     return x % phi
 
-# security -> e value is too random
-# what i think -> after research it seems 65537 is the best practice and randomness doesn't matter 
-# security -> use of built in random 
-# what i think -> appently it's not as random, further research needed 
-def public_exponent(phi):
-    e = random.randrange(1,phi)
-    if e%2 == 0:
-        e +=1
-    while gcd(e,phi) != 1:
-            e +=2
-    return e       
+     
 
