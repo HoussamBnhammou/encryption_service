@@ -4,7 +4,7 @@
     - linting? (i can understand if you wanna skip this)
 
 -> a tree of the fields worth researching for the next steps :
-    - Number theory (will help with finding primes efficently, focus on primality testing)
+    - Number theory (will help with finding primes efficently, focus on primality testing) --> Houssam
     - Key generation (the main hole we have has to do with key validation)
     - Message encoding (some stuff about padding, these words come up alot : PKCS#1 v1.5, OAEP)
     - RSA specific holes (CSPRNGs, semantic security, side-channel resistance, padding-oracle defense)
