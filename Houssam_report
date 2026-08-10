@@ -1,37 +1,15 @@
 - what i modified :
-    - added : nothing
+    - added : next steps
     - removed : nothing
     - renamed : nothing 
-    - modified : key_generator , utils , special report
+    - modified : nothing
 
 - what i did: 
-    - spent time reading and reflecting on your comments.
-    - addressed some of them and answered the ones that i think are not valid 
-    - the adressed comments, will have a Done flag under them.
+    - Added a detailed report for a lean objectif that aligh with our strategy for this project.
 
 - struggles :
-    - nothing but shortness of time.
+    - need to read more about what we are implementing.
 
 - next steps :
-    - adress what's left on the comments, if there is any.
-    - pick  one of the fields listed to implement, i suggest we do them all - we should see them as futures, 
-    where each one of us should pick one and implement it, we make sure our implementations are modular and simple
-    so we won't step on each others code..
-
-
-second push
-
-- what i modified :
-    - added : nothing
-    - removed : nothing
-    - renamed : nothing 
-    - modified : adding primality check using miller test, didn't finish it yet, i will finish it next session.
-- what i did: 
-    - read about how to generate large size primes mostly, and started with an implementation.
-
-- struggles :
-    - nothing but shortness of time.
-
-- next steps :
-    - continue on my progress.
+    - reiterate on the plan, based on your feedback, then apply the plan.
 
