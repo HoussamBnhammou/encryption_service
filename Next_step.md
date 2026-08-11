@@ -23,4 +23,5 @@ Add Padding  encryption, we will use RSA-OAEP structure.
 
 
 Switch to generating large prime numbers, with secure randomness. (size between 2048/3072-bit)
-        - didn't had time to share details about this. i will do it tmrw.
+        -  use a secure random number generator library.
+        -  add  the validation function, that can validate large size primes,
